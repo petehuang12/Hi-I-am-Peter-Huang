@@ -59,12 +59,37 @@ nav ul li a:hover {
     margin-bottom: 20px;
     animation: slideInLeft 1.5s ease-out; /* Slide-in animation for the heading */
 }
+#home h2::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust to position the bubble */
+    left: -20px; /* Adjust to position the bubble */
+    right: -20px; /* Adjust to position the bubble */
+    bottom: -10px; /* Adjust to position the bubble */
+    background-color: black; /* Bubble color */
+    border-radius: 50px; /* Rounded corners for bubble effect */
+    z-index: -1; /* Place the bubble behind the text */
+    opacity: 0.7; /* Adjust transparency of the bubble */
+}
 
 #home p {
     font-size: 1.5rem;
     max-width: 600px;
     margin: 0 auto;
     animation: slideInRight 1.5s ease-out; /* Slide-in animation for the paragraph */
+}
+
+#home p::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust to position the bubble */
+    left: -20px; /* Adjust to position the bubble */
+    right: -20px; /* Adjust to position the bubble */
+    bottom: -10px; /* Adjust to position the bubble */
+    background-color: black; /* Bubble color */
+    border-radius: 50px; /* Rounded corners for bubble effect */
+    z-index: -1; /* Place the bubble behind the text */
+    opacity: 0.7; /* Adjust transparency of the bubble */
 }
 
 /* Keyframes for Slide-In Animations */
