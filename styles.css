@@ -57,6 +57,7 @@ nav ul li a:hover {
 #home h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+    position: relative; /* Required for Pseudo-element positioning */
     animation: slideInLeft 1.5s ease-out forwards; /* Slide-in animation for the heading */
 }
 #home h2::before {
@@ -77,6 +78,7 @@ nav ul li a:hover {
     font-size: 1.5rem;
     max-width: 600px;
     margin: 0 auto;
+    position: relative; /* Required for Pseudo-element positioning */
     animation: slideInRight 1.5s ease-out forwards; /* Slide-in animation for the paragraph */
 }
 
