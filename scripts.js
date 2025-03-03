@@ -4,10 +4,15 @@ document.querySelectorAll('nav a').forEach(anchor => {
         e.preventDefault(); // Prevent default anchor behavior
         const targetId = this.getAttribute('href').substring(1); // Get the target section ID
         const targetSection = document.getElementById(targetId); // Find the target section
-        targetSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
+
+        // Scroll to the target section with an offset for the sticky header
+        const offset = 80; // Adjust this value based on your header height
+        window.scrollTo({
+            top: targetSection.offsetTop - offset,
+            behavior: 'smooth' // Enable smooth scrolling
+        });
     });
 });
-
 // Form submission handling
 document.getElementById('contact-form').addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent form submission
