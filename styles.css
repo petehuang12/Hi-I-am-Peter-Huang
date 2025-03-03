@@ -44,7 +44,7 @@ nav ul li a:hover {
 }
 
 /* Home Section with Background Image and Slide-In Animation */
-#home {
+#index {
     background-image: url('h1background.jpg'); /* Replace with your image file name */
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the image */
@@ -59,13 +59,13 @@ nav ul li a:hover {
     overflow: hidden; /* Hide overflow to prevent scrollbars during animation */
 }
 
-#home h2 {
+#index h2 {
     font-size: 3rem;
     margin-bottom: 20px;
     position: relative; /* Required for Pseudo-element positioning */
     animation: slideInLeft 1.5s ease-out forwards; /* Slide-in animation for the heading */
 }
-#home h2::before {
+#index h2::before {
     content: '';
     position: absolute;
     top: -10px; /* Adjust to position the bubble */
@@ -79,7 +79,7 @@ nav ul li a:hover {
     animation: fadeIn 1.5s ease-out forwards; /* Fade-in animation for the bubble */
 }
 
-#home p {
+#index p {
     font-size: 1.5rem;
     max-width: 600px;
     margin: 0 auto;
@@ -87,7 +87,7 @@ nav ul li a:hover {
     animation: slideInRight 1.5s ease-out forwards; /* Slide-in animation for the paragraph */
 }
 
-#home p::before {
+#index p::before {
     content: '';
     position: absolute;
     top: -10px; /* Adjust to position the bubble */
