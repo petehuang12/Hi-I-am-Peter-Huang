@@ -38,8 +38,9 @@ nav ul li a:hover {
     color: #ff6347; /* Change color on hover */
 }
 
+/* Home Section with Background Image */
 #home {
-    background-image: url('h1background.jpg'); /* Replace with your image file name */
+    background-image: url('background.jpg'); /* Replace with your image file name */
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -55,14 +56,12 @@ nav ul li a:hover {
 #home h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    animation: slideInLeft 1.5s ease-out; /* Slide-in animation for the heading */
 }
 
 #home p {
     font-size: 1.5rem;
     max-width: 600px;
     margin: 0 auto;
-    animation: slideInLeft 1.5s ease-out; /* Slide-in animation for the paragraph */
 }
 
 /* Other Sections */
